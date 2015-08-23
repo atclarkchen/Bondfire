@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="125dp"
+    android:orientation="vertical"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:paddingTop="3dp"
+    android:paddingBottom="3dp"
+    android:dividerPadding="5dp">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/group"
+            android:id="@+id/icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:textStyle="bold"
+            android:text="Name"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/icon" />
+
+        <ToggleButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/star1"
+            android:textOn=""
+            android:textOff=""
+            android:background="@drawable/star_toggle"
+            android:stateListAnimator="@null"
+            android:layout_below="@+id/name"
+            android:layout_toStartOf="@+id/star2" />
+        <ToggleButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/star2"
+            android:textOn=""
+            android:textOff=""
+            android:background="@drawable/star_toggle"
+            android:stateListAnimator="@null"
+            android:layout_alignTop="@+id/star1"
+            android:layout_toStartOf="@+id/star3" />
+        <ToggleButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/star3"
+            android:textOn=""
+            android:textOff=""
+            android:background="@drawable/star_toggle"
+            android:stateListAnimator="@null"
+            android:layout_alignTop="@+id/star2"
+            android:layout_toStartOf="@+id/star4" />
+        <ToggleButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/star4"
+            android:textOn=""
+            android:textOff=""
+            android:background="@drawable/star_toggle"
+            android:stateListAnimator="@null"
+            android:layout_alignTop="@+id/star3"
+            android:layout_toStartOf="@+id/star5" />
+        <ToggleButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/star5"
+            android:textOn=""
+            android:textOff=""
+            android:background="@drawable/star_toggle"
+            android:stateListAnimator="@null"
+            android:layout_alignTop="@+id/star4"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/groupComments"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/button"
+        android:hint="Write a review"
+        android:background="@drawable/msgbar"
+        android:textCursorDrawable="@null"
+        />
+
+</LinearLayout>

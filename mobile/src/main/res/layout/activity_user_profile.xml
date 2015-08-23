@@ -1,0 +1,159 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.thenextmediumsizedthing.bondfire.User_profile"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp">
+
+        <Button
+            android:layout_width="20dp"
+            android:layout_height="33dp"
+            android:id="@+id/backarrow"
+            android:background="@drawable/leftarrow"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:stateListAnimator="@null"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/name"
+            android:textSize="25dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffff5644"
+            />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="180dp">
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/picture"
+            android:src="@drawable/jessica"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#4A7997">
+        
+        <ToggleButton
+            android:layout_width="125dp"
+            android:layout_height="fill_parent"
+            android:text="Groups"
+            android:textColor="#FFFFFF"
+            android:textOn="Groups"
+            android:textOff="Groups"
+            android:id="@+id/groups"
+            android:stateListAnimator="@null"
+            android:background="@drawable/profile_tabs"/>
+
+        <ToggleButton
+            android:layout_width="125dp"
+            android:layout_height="fill_parent"
+            android:text="Down for"
+            android:textColor="#FFFFFF"
+            android:textOn="Down for"
+            android:textOff="Down for"
+            android:id="@+id/down"
+            android:stateListAnimator="@null"
+            android:background="@drawable/profile_tabs"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <ToggleButton
+            android:layout_width="125dp"
+            android:layout_height="fill_parent"
+            android:text="Reviews"
+            android:textColor="#FFFFFF"
+            android:textOn="Reviews"
+            android:textOff="Reviews"
+            android:id="@+id/reviews"
+            android:stateListAnimator="@null"
+            android:background="@drawable/profile_tabs"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="10dp"
+        android:id="@+id/groupsTab">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Groups I'm in:"
+            android:id="@+id/groupsTitle"
+            android:textSize="@dimen/abc_text_size_large_material"
+            android:layout_alignBaseline="@+id/addGroup"
+            android:layout_alignBottom="@+id/addGroup"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Down for:"
+            android:id="@+id/downTitle"
+            android:textSize="@dimen/abc_text_size_large_material"
+            android:layout_alignBaseline="@+id/addGroup"
+            android:layout_alignBottom="@+id/addGroup"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/addGroup"
+            android:stateListAnimator="@null"
+            android:background="@drawable/add"/>
+
+        <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/reviewsList">
+        </ListView>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

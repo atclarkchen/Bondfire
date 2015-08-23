@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.thenextmediumsizedthing.bondfire" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:largeHeap="true" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ChatActivity"
+            android:label="ChatActivity" >
+        </activity>
+        <activity
+            android:name=".Create_group"
+            android:label="Create_group" >
+        </activity>
+        <activity
+            android:name=".edit_group"
+            android:label="edit_group" >
+        </activity>
+        <activity
+            android:name=".GroupChatActivity"
+            android:label="GroupChatActivity" >
+        </activity>
+        <activity
+            android:name=".other_group"
+            android:noHistory="true"
+            android:label="other_group" >
+        </activity>
+        <activity
+            android:name=".OtherGroup"
+            android:noHistory="true"
+            android:label="OtherGroup" >
+        </activity>
+        <activity
+            android:name=".own_existing_group"
+            android:noHistory="true"
+            android:label="own_existing_group" >
+        </activity>
+        <activity
+            android:name=".ReviewActivity"
+            android:noHistory="true"
+            android:label="ReviewActivity" >
+        </activity>
+        <activity
+            android:name=".BrowseGroupsActivity"
+            android:label="BrowseGroupsActivity" >
+        </activity>
+        <activity
+            android:name=".User_profile"
+            android:noHistory="true"
+            android:label="User_profile"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <service
+            android:name=".NotifyWear"
+            android:label="NotifyWear">
+        </service>
+        <service
+            android:name=".OpenMobile"
+            android:label="OpenMobile"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.wearable.BIND_LISTENER" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".JumpToMobile"
+            android:label="JumpToMobile">
+            <intent-filter>
+                <action android:name="com.google.android.gms.wearable.BIND_LISTENER" />
+            </intent-filter>
+        </service>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+</manifest>
